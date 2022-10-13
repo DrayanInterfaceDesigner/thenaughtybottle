@@ -8,14 +8,17 @@ body {
 }
 
 .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #111111;
 }
-/*
-100px 
 
-unidades flutuantes:
-    %
-    vw | vh 
- */
+.login__wrapper {
+
+    width: 20vw;
+    height: 85vh;
+    border: 1px dashed #00FF23;
+}
