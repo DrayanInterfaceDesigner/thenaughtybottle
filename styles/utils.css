@@ -1,0 +1,12 @@
+:root {
+    --theme-bright-color: #E51F44;
+    --dimmed-bright-color: #890B26;
+    --highlight-warning-color: #E25B20;
+    --dark-bg-color: #111111;
+    --dark-btn-color: #1E1118;
+    --notification-color: #07A9E2;
+    --contrast-text-color: #DDDDDD;
+    --alternative-text-color: #D8AFBA;
+}
+
+/* Usage: css-prop: var(--variable-name); */
