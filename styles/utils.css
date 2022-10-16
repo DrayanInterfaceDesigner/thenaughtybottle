@@ -10,3 +10,9 @@
 }
 
 /* Usage: css-prop: var(--variable-name); */
+
+._full-height-viewport {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+}
