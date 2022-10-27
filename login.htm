@@ -1,21 +1,51 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Naughty Bottle - Login</title>
-    <link rel="stylesheet" href="./styles/utils.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/minima.css">
     <link rel="stylesheet" href="./styles/login.css">
-
+    <script defer src="./script/login/main.js"></script>
 </head>
 <body>
-
-    <div id="main" class="main__container">
-
-        
-        <div class="login__wrapper"></div>
+    <div class="app">
+        <section class="login">
+            <img class="login__logo" src="./assets/svg/logo_text_below.svg"/>
+            <div class="login__title__wrapper">
+                <p class="login__title">Login in to your account</p>
+            </div>
+            <div class="login__account__container">
+                <form id="login" class="account__form" onsubmit="event.preventDefault(); lol()">
+                    <fieldset class="form__fieldset">
+                        <p class="form__label">E-mail</p>
+                        <fieldset class="form__fieldset__inner">
+                            <fieldset class="form__fieldset__inner__wrapper">
+                                <input type="email" class="form__input__top">
+                                <p class="form__error">error x</p>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <p class="form__label">Password</p>
+                        <fieldset class="form__fieldset__inner">
+                            <fieldset class="form__fieldset__inner__wrapper">
+                                <input type="password" class="form__input__bottom">
+                                <p class="form__error">error y</p>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <button type="submit" class="form__button form__button_div"> login </button>
+                        <p class="form__question">never tried us before? <b class="form__question__button">[ join ]</b></p>
+                    </fieldset>
+                </form>
+                <div class="modal__preloader">
+                    <img class="preloader" src="./assets/svg/logo.svg"></img>
+                </div>
+            </div>
+        </section>
     </div>
-
 </body>
 </html>

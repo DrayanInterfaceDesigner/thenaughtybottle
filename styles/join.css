@@ -1,0 +1,23 @@
+
+/*  */
+
+
+.roller__wrapper {
+    width: 35vw;
+    overflow: hidden;
+}
+.roller__wrapper__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.roller__container{
+    display: inline-block;
+    width: 100%;
+    min-width: 35vw;
+}
+
+.rollable {
+    transition: .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}

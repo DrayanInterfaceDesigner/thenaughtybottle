@@ -1,0 +1,103 @@
+:root {
+    --theme-bright-color: #E51F44;
+    --dimmed-bright-color: #890B26;
+    --highlight-warning-color: #E25B20;
+    --dark-bg-color: #111111;
+    --dark-btn-color: #1E1118;
+    --notification-color: #07A9E2;
+    --contrast-text-color: #DDDDDD;
+    --alternative-text-color: #D8AFBA;
+    --font-tech: 'Cascadia Code', sans-serif;
+    --font-general: 'Acumin Variable Concept', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-general);
+    font-size: 1.2vw;
+    color: var(--contrast-text-color);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    background-color: var(--dark-bg-color);
+    overflow-x: hidden;
+}
+
+.fp {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    border: 1px dashed #890B26;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.bag__icon:hover{
+    animation-name: jiggle;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+    0%, 5.2%, 100% { transform: translateX(0);}
+    0.4%  { transform: translateX(-.3rem) rotateZ(-15deg);}
+    1.2%  {transform: translateX(.3rem)  rotateZ(1deg);}
+    2%  {transform: translateX(-.3rem)  rotateZ(15deg);}
+    2.8%  {transform: translateX(.3rem)  rotateZ(1deg);}
+    3.6%  {transform: translateX(-.3rem) rotateZ(-15deg);}
+    4.4%  {transform: translateX(.3rem) rotateZ(1deg);}
+}
+
+@keyframes jiggle {
+    0% {
+        transform-origin: bottom;
+        transform: translateY(-.3rem);
+    }
+    20% {
+        transform-origin: bottom;
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        transform-origin: bottom;
+        transform: rotateZ(10deg);
+    }
+    60% {
+        transform-origin: bottom;
+        transform: rotateZ(-10deg);
+    }
+    80% {
+        transform-origin: bottom;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform-origin: bottom;
+        transform: translateY(0rem);
+    }
+}
+
+.jump {
+    display: inline-block;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(-1rem) rotateY(360deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
