@@ -156,8 +156,6 @@ fieldset {
 }
 
 .form__question__button {
-    text-decoration: none;
-    font-weight: 600;
     color: var(--theme-bright-color);
     opacity: .8;
     cursor: pointer;

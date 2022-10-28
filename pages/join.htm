@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/minima.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/join.css">
+    <script defer src="../scripts/join/main.js"></script>
+</head>
+<body>
+    <div class="app">
+        <section class="login">
+            <img class="login__logo" src="../assets/svg/logo_text_below.svg"/>
+            <div class="login__title__wrapper">
+                <div class="login__step__wrapper">
+                    <div class="login__step">
+                        <div class="login__step__selector"></div>
+                    </div>
+                    <div class="login__step">
+                        <div class="login__step__selector"></div>
+                    </div>
+                    <div class="login__step">
+                        <div class="login__step__selector"></div>
+                    </div>
+                </div>
+                <p class="login__title">Sign with blood!</p>
+            </div>
+
+            <div class="roller__wrapper">
+                <div class="roller__wrapper__inner">
+
+                    <div class="roller__container rollable">
+                        <div class="login__account__container">
+                            <form class="account__form">
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">Name</p>
+                                    <fieldset class="form__fieldset__inner">
+                                        <fieldset class="form__fieldset__inner__wrapper">
+                                            <input type="email" class="form__input__top">
+                                            <p class="form__error">error x</p>
+                                        </fieldset>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">E-mail</p>
+                                    <fieldset class="form__fieldset__inner">
+                                        <fieldset class="form__fieldset__inner__wrapper">
+                                            <input type="password" class="form__input__bottom">
+                                            <p class="form__error">error y</p>
+                                        </fieldset>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div type="submit" class="form__button form__button_div"> next </div>
+                                    <p class="form__question">already have an account? <a href="../index.htm" class="form__question__button">[ enter ]</a></p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="roller__container rollable">
+                        <div class="login__account__container">
+                            <form class="account__form">
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">Password</p>
+                                    <fieldset class="form__fieldset__inner">
+                                        <fieldset class="form__fieldset__inner__wrapper">
+                                            <input type="email" class="form__input__top">
+                                            <p class="form__error">error x</p>
+                                        </fieldset>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">Confirm Password</p>
+                                    <fieldset class="form__fieldset__inner">
+                                        <fieldset class="form__fieldset__inner__wrapper">
+                                            <input type="password" class="form__input__bottom">
+                                            <p class="form__error">error y</p>
+                                        </fieldset>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div type="submit" class="form__button form__button_div"> next </div>
+                                    <p class="form__question">already have an account? <a href="../index.htm" class="form__question__button">[ enter ]</a></p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="roller__container rollable">
+                        <div class="login__account__container">
+                            <form class="account__form">
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">CPF</p>
+                                    <fieldset class="form__fieldset__inner">
+                                        <fieldset class="form__fieldset__inner__wrapper">
+                                            <input type="email" class="form__input__top">
+                                            <p class="form__error">error x</p>
+                                        </fieldset>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+                                    <div type="submit" class="form__button form__button_div"> create account </div>
+                                    <p class="form__question">already have an account? <a href="../index.htm" class="form__question__button">[ enter ]</a></p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="modal__preloader">
+            <img class="preloader" src="../assets/svg/logo.svg"></img>
+        </div>
+        <form id="real__form" method="post" action="./larissa.php">
+            <!-- tenta fazer a chamada action pelo js lari -->
+
+            <input name="nome"  id="nome"   type="text">
+            <input name="email" id="email"  type="email">
+            <input name="senha" id="senha"  type="password">
+            <input name="cpf"   id="cpf"    type="text">
+
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
