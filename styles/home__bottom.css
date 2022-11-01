@@ -1,0 +1,51 @@
+:root {
+    --size: 3.5rem;
+}
+
+.bottom__top__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom__top__button {
+    position: relative;
+}
+
+.button__outerrect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+    height: 5rem;
+    background: red;
+    outline: 1px solid blue;
+    /* rotate: 90deg; */
+}
+.button__left {
+    position: absolute;
+    left: -1.8rem;
+    width: var(--size);
+    height: var(--size);
+    margin-right: 1rem;
+    background: red;
+    background: red;
+    rotate: 45deg;
+}
+
+.button__right {
+    position: absolute;
+    right: -2.8rem;
+    width: var(--size);
+    height: var(--size);
+    margin-right: 1rem;
+    background: red;
+    rotate: 45deg;
+}

@@ -66,9 +66,10 @@
 }
 
 .login__title {
+    margin: .2rem 0;
     text-align: center;
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 /* scroller */
@@ -152,6 +153,7 @@ fieldset {
 
 .form__question, .form__question__button {
     font-size: .8rem;
+    font-weight: 300;
     font-family: var(--font-tech);
 }
 
@@ -188,5 +190,6 @@ fieldset {
 }
 
 .form__button_div {
+    font-weight: 500;
     text-align: center;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300;400&display=swap');
+
 :root {
     --theme-bright-color: #E51F44;
     --dimmed-bright-color: #890B26;
@@ -7,8 +9,12 @@
     --notification-color: #07A9E2;
     --contrast-text-color: #DDDDDD;
     --alternative-text-color: #D8AFBA;
+    --card-border-color: #2B0404;
+    --card-text-color: #C42828;
+    --card-btn-border-color: #9B1515;
+    --card-btn-bg-color: #f21818;
     --font-tech: 'Cascadia Code', sans-serif;
-    --font-general: 'Acumin Variable Concept', sans-serif;
+    --font-general: 'Montserrat', sans-serif;
 }
 
 * {
@@ -17,7 +23,11 @@
     padding: 0;
     font-family: var(--font-general);
     font-size: 1.2vw;
+    font-weight: 500;
     color: var(--contrast-text-color);
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -30,6 +40,19 @@ body {
     background-color: var(--dark-bg-color);
     overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dimmed-bright-color);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
 
 .fp {
     width: 100vw;

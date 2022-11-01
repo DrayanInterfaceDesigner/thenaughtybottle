@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item</title>
+    <style>
+        * {
+            font-size: 1vw;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* width: 100%; */
+            /* background-color: blueviolet; */
+            aspect-ratio: 1/1;
+        }
+
+        .item__3D__container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+
+        .item__3D__wrapper {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .item__3D {
+            width: 100%;
+        }
+
+
+        .item__3D__canvas {
+            position: absolute;
+            top: -100rem;
+            left: -100rem;
+            width: 300%;
+            /* height: 200%; */
+            /* background-color: bisque; */
+        }
+        
+    </style>
+    <!-- <script defer type="module" src="https://threejs.org/build/three.js"></script> -->
+    
+    <script defer type="module" src="../scripts/store/object__renderer.js"></script>
+</head>
+<body>
+
+    <div class="item__3D__container">
+        <div class="item__3D__wrapper">
+            <div class="item__3D"></div>
+        </div>
+    </div>
+
+    <script>
+        // var dataFromDocument = location.hash.replace(/#/, "");
+        // console.log(dataFromDocument);
+    </script>
+
+    
+</body>
+</html>

@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Naughty Bottle - Store</title>
     <link rel="stylesheet" href="../styles/minima.css">
+    <link rel="stylesheet" href="../styles/iframe.css">
     <link rel="stylesheet" href="../styles/store.css">
+    <link rel="stylesheet" href="../styles/catalog__items.css">
+    <script defer type="module" src="https://threejs.org/build/three.js"></script>
+    <script defer type="module" src="../scripts/store/main.js"></script>
 
 </head>
 <body>
 
     <div class="app">
         <section class="store fp">
+            <div class="store__bg"></div>
             <div class="store__menu">
 
                 <div class="menu__backwards__sizer">
@@ -38,7 +43,39 @@
 
             </div>
             <div class="store__products">
-                <div class="store__products__list"></div>
+                <div class="store__products__list">
+                    <div class="products__list__item__wrapper">
+                        <div class="products__list__item">
+                            <div class="item__3D__container">
+                                <iframe class="item__3D__iframe" src="./iframe.htm#potion-bottle_red"></iframe>
+                            </div>
+                            <div class="item__header">
+                                <div class="item__header__info">
+                                    <p class="info__name">Axiomorphius</p>
+                                    <p class="info__subtitle">a "lotion" in a jar</p>
+                                    <div class="info__bg__wrapper">
+                                        <img class="info__bg" src="../assets/svg/petals.svg" ></img>
+                                        <img class="info__bg" src="../assets/svg/petals.svg" ></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, perspiciatis. </p>
+                                <div class="item__buy__wrapper">
+                                    <div class="buy__button__wrapper">
+                                        <div class="buy__button">
+                                            <p class="buy__button__label">Buy</p>
+                                        </div>
+                                    </div>
+                                    <div class="buy__price">
+                                        <p class="price__tag">66.81</p>
+                                        <p class="price__currency">BRL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
             </div>
         </section>
     </div>

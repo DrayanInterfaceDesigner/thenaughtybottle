@@ -81,6 +81,7 @@
     clip-path: polygon(4% 0, 96% 0, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
     width: 100%;
     background-color: var(--dark-btn-color);
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -88,16 +89,16 @@
 .openstore__button__inner__inner {
     transition: .1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-/* .openstore__button__inner:hover .openstore__button{
+.openstore__button__inner:hover .openstore__button{
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
 }
 .openstore__button__inner:hover .openstore__button__inner__inner {
     clip-path: polygon(0% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
-} */
+}
 
 .openstore__button__text {
     font-size: 1.1rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--theme-bright-color);
 }
 

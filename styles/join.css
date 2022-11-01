@@ -22,6 +22,9 @@
     transition: .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-#real__form {
-    display: none;
+.hide_everything {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    opacity: 0;
 }

@@ -19,7 +19,7 @@ export default function main(array, delay) {
     overflowBlock()
 
     window.addEventListener('resize', () => {_onWindowResize(array)})
-    window.addEventListener('wheel', (event)=> {_scroll(array, event)})
+    window.addEventListener('wheel', (event)=> {console.log('hi'); _scroll(array, event); window.removeEventListener('wheel')})
 }
 
 function _scroll(array, event) {

@@ -48,7 +48,7 @@
                                     <p class="form__label">E-mail</p>
                                     <fieldset class="form__fieldset__inner">
                                         <fieldset class="form__fieldset__inner__wrapper">
-                                            <input type="password" class="form__input__bottom">
+                                            <input type="email" class="form__input__bottom">
                                             <p class="form__error">error y</p>
                                         </fieldset>
                                     </fieldset>
@@ -68,7 +68,7 @@
                                     <p class="form__label">Password</p>
                                     <fieldset class="form__fieldset__inner">
                                         <fieldset class="form__fieldset__inner__wrapper">
-                                            <input type="email" class="form__input__top">
+                                            <input type="password" class="form__input__top">
                                             <p class="form__error">error x</p>
                                         </fieldset>
                                     </fieldset>
@@ -97,15 +97,25 @@
                                     <p class="form__label">CPF</p>
                                     <fieldset class="form__fieldset__inner">
                                         <fieldset class="form__fieldset__inner__wrapper">
-                                            <input type="email" class="form__input__top">
+                                            <input type="text" min="11" max="11" class="form__input__top">
                                             <p class="form__error">error x</p>
                                         </fieldset>
                                     </fieldset>
                                 </fieldset>
-                                <fieldset class="form__fieldset">
-                                    <div type="submit" class="form__button form__button_div"> create account </div>
+                                <form id="real__form" method="post" action="./larissa.php">
+                                    <!-- tenta fazer a chamada action pelo js lari -->
+                        
+                                    <input class="hide_everything" name="nome"  id="nome"   type="text">
+                                    <input class="hide_everything" name="email" id="email"  type="email">
+                                    <input class="hide_everything" name="senha" id="senha"  type="password">
+                                    <input class="hide_everything" name="cpf"   id="cpf"    type="text">
+                                    <!-- aqui jas o seu avo - button submit  -->
+                                    <fieldset class="form__fieldset">
+                                        <button class="form__button form__button_div" id="ja">sexo</button>
                                     <p class="form__question">already have an account? <a href="../index.htm" class="form__question__button">[ enter ]</a></p>
-                                </fieldset>
+                                    </fieldset>
+
+                                </form>
                             </form>
                         </div>
                     </div>
@@ -114,17 +124,8 @@
             </div>
         </section>
         <div class="modal__preloader">
-            <img class="preloader" src="../assets/svg/logo.svg" style="display: none;"></img>
+            <img class="preloader" src="../assets/svg/logo.svg"></img>
         </div>
-        <form id="real__form" method="post" action="./larissa.php">
-            <!-- tenta fazer a chamada action pelo js lari -->
-
-            <input name="nome"  id="nome"   type="text">
-            <input name="email" id="email"  type="email">
-            <input name="senha" id="senha"  type="password">
-            <input name="cpf"   id="cpf"    type="text">
-
-        </form>
     </div>
 </body>
 </html>
