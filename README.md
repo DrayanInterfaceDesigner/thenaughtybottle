@@ -1,2 +1,2 @@
 # thenaughtybottle
- we sell stuff youve seen before
+ we sell stuff youve never seen before
