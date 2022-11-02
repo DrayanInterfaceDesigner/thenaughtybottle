@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../styles/minima.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/join.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="../scripts/join/main.js"></script>
+    <script defer src="../scripts/join/getdata.js"></script>
+
+
 </head>
 <body>
     <div class="app">
@@ -103,7 +107,7 @@
                                         </fieldset>
                                     </fieldset>
                                 </fieldset>
-                                <form id="real__form" method="post" action="./larissa.php">
+                                <form id="real__form" method="post" action="../php/join.php">
                                     <!-- tenta fazer a chamada action pelo js lari -->
                         
                                     <input class="hide_everything" name="nome"  id="nome"   type="text">
@@ -112,7 +116,7 @@
                                     <input class="hide_everything" name="cpf"   id="cpf"    type="text">
                                     <!-- aqui jas o seu avo - button submit  -->
                                     <fieldset class="form__fieldset">
-                                        <button class="form__button form__button_div" id="ja">sexo</button>
+                                        <button class="form__button form__button_div" id="enviar_real">enviar</button>
                                     <p class="form__question">already have an account? <a href="../index.htm" class="form__question__button">[ enter ]</a></p>
                                     </fieldset>
 
