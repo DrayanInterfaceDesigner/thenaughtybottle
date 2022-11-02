@@ -5,7 +5,9 @@ const item_parent = document.querySelector('.products__list__item__wrapper')
 
 // Essa array vai ser criada dinamicamente usando as informações
 // vindas do servidor, que são: 
-// color(potion-bottle-corAqui), name, subtitle, description, price
+// model_adress(potion-bottle_corAqui), name, subtitle,
+// description, price
+
 const items = [
 	new Item({
 	URL: './iframe.htm',
