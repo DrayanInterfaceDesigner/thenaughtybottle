@@ -10,9 +10,9 @@ const items = [
 	new Item({
 	URL: './iframe.htm',
 	model_adress: 'potion-bottle_blue',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	name: 'Technical Assistance',
+	subtitle: 'it works!',
+	description: "You can finally summon that indian guy to solve all your tech problems. Or at least try...",
 	price: "568.75"
 	}),
 	new Item({

@@ -140,7 +140,29 @@
     cursor: pointer;
 }
 
+.main__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-size: cover;
+    opacity: 1;
+    z-index: -98;
+    overflow: hidden;
+}
+
 .main__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -153,8 +175,13 @@
     background-color: rgb(22, 1, 6);
     background-image: url(../assets/bg/bg.png);
     background-size: cover;
-    opacity: 1;
+    opacity: .3;
     z-index: -99;
+}
+
+.main__bg__announcement {
+    margin-top: 8%;
+    width: 62%;
 }
 
 
