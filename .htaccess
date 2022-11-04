@@ -1,3 +1,2 @@
 Header Set Access-Control-Allow-Headers *
 Header Set Access-Control-Allow-Origin *
-Header set Access-Control-Allow-Origin "http://localhost:8556/"
