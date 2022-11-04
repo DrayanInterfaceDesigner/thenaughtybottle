@@ -44,6 +44,7 @@
     background-color: #3C141C;
     margin: 1rem calc(var(--step-size) + .1rem);
     rotate: 45deg;
+    cursor: pointer;
 }
 
 .login__step::before {
