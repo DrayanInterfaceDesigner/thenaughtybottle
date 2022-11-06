@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="../assets/svg/logo.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/svg/logo.svg">
     <link rel="stylesheet" href="./styles/minima.css">
     <link rel="stylesheet" href="./styles/login.css">
     <script defer src="./scripts/login/main.js"></script>
@@ -18,12 +21,12 @@
                 <p class="login__title">Login in to your account</p>
             </div>
             <div class="login__account__container">
-                <form id="login" class="account__form" onsubmit="event.preventDefault(); lol()">
-                    <fieldset class="form__fieldset">
+                <form id="login" class="account__form" method="post" action="./php/login.php">
+                    <fieldset class= "form__fieldset">
                         <p class="form__label">E-mail</p>
                         <fieldset class="form__fieldset__inner">
                             <fieldset class="form__fieldset__inner__wrapper">
-                                <input type="email" class="form__input__top">
+                                <input type="text" id="email" class="form__input__top">
                                 <p class="form__error">error x</p>
                             </fieldset>
                         </fieldset>
@@ -32,13 +35,13 @@
                         <p class="form__label">Password</p>
                         <fieldset class="form__fieldset__inner">
                             <fieldset class="form__fieldset__inner__wrapper">
-                                <input type="password" class="form__input__bottom">
+                                <input type="password" id="senha" class="form__input__bottom">
                                 <p class="form__error">error y</p>
                             </fieldset>
                         </fieldset>
                     </fieldset>
                     <fieldset class="form__fieldset">
-                        <button type="submit" class="form__button form__button_div"> login </button>
+                        <button type="submit" id="login__btn" class="form__button form__button_div"> login </button>
                         <p class="form__question">never tried us before? <a href="./pages/join.htm" class="form__question__button">[ join ]</a></p>
                     </fieldset>
                 </form>

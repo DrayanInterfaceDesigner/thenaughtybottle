@@ -1,16 +1,16 @@
 <?php
-$conexao = mysqli_connect("localhost:3306", "root", "", "agoravai");
-$verifica = mysqli_query($conexao, "SELECT cpf FROM clientes");
-//$ver_cpf = mysqli_fetch_assoc($verifica);
+require("conexao.php");
 $nome = $_POST["nome"];
 $cpf = $_POST["cpf"];
 $senha = $_POST["senha"];
 $email = $_POST["email"];
+$verifica = mysqli_query($conn, "SELECT * FROM clientes WHERE cpf = '$cpf'");
+//$ver_cpf = mysqli_fetch_assoc($verifica);
 
 if(mysqli_num_rows($verifica) == 1){
-    header("location: ../pages/join.html");
+    header("location: ./thenaughtybottle/index.htm");
 }
 else{
-    mysqli_query($conexao, "INSERT INTO clientes(nome, email, senha, cpf) VALUES ('$nome', '$email', '$senha', '$cpf')");
+    mysqli_query($conn, "INSERT INTO clientes(nome, email, senha, cpf) VALUES ('$nome', '$email', '$senha', '$cpf')");
 }
 ?>
