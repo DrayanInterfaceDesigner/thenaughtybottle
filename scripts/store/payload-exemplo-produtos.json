@@ -1,0 +1,18 @@
+[{
+    "cor": "vermel",
+    "descricao": "Uma dose de bom-humor para programar em dias difíceis. Contém tantas substâncias diferenciadas que é impossível listar tudo!",
+    "estoque": "100",
+    "id_produto": "1",
+    "model_address": null,
+    "nome": "Axiomorphius",
+    "valor": "66.81"
+},
+{
+    "cor": "Azul",
+    "descricao": "Aquele up de energia pra qualquer programador cansado. ",
+    "estoque": "100",
+    "id_produto": "2",
+    "model_address": null,
+    "nome": "Tech Assistence",
+    "valor": "56.8"
+}]
