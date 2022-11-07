@@ -22,7 +22,7 @@ const items = [
 	model_adress: 'potion-bottle_wine',
 	name: 'Blasmorpheus',
 	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	description: "Love was never a option. So I've brought the cold.",
 	price: "568.75"
 	}),
 	new Item({
@@ -30,7 +30,7 @@ const items = [
 	model_adress: 'potion-bottle_green',
 	name: 'Blasmorpheus',
 	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	description: "Love was never a option. So I've brought the cold.",
 	price: "568.75"
 	}),
 	new Item({
@@ -38,7 +38,7 @@ const items = [
 	model_adress: 'potion-bottle_orange',
 	name: 'Blasmorpheus',
 	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	description: "Love was never a option. So I've brought the cold.",
 	price: "568.75"
 	}),
 	new Item({
@@ -46,7 +46,7 @@ const items = [
 	model_adress: 'potion-bottle_pink',
 	name: 'Blasmorpheus',
 	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	description: "Love was never a option. So I've brought the cold.",
 	price: "568.75"
 	}),
 	new Item({
@@ -54,7 +54,7 @@ const items = [
 	model_adress: 'potion-bottle_purple',
 	name: 'Blasmorpheus',
 	subtitle: 'cold freezing',
-	description: "Sex was never a option. So I've brought the cold.",
+	description: "Love was never a option. So I've brought the cold.",
 	price: "568.75"
 	})
 ]
