@@ -1,8 +1,8 @@
-import {resultJSON} from './store/listar_produtos.js'
+import { resultBagJSON } from './bag/listar_carrinho.js'
 
 const loot_number = document.querySelector(".bag__quantity")
 
 window.onload = function() {
-    console.log(resultJSON)
-    loot_number.innerText = resultJSON.length
+    console.log(resultBagJSON)
+    loot_number.innerText = resultBagJSON.length
 }
