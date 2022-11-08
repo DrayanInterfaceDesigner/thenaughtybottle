@@ -1,5 +1,5 @@
 [{
-    "cor": "vermel",
+    "cor": "vermelho",
     "descricao": "Uma dose de bom-humor para programar em dias difíceis. Contém tantas substâncias diferenciadas que é impossível listar tudo!",
     "estoque": "100",
     "id_produto": "1",
@@ -8,11 +8,48 @@
     "valor": "66.81"
 },
 {
-    "cor": "Azul",
+    "cor": "azul",
     "descricao": "Aquele up de energia pra qualquer programador cansado. ",
     "estoque": "100",
     "id_produto": "2",
     "model_address": null,
     "nome": "Tech Assistence",
     "valor": "56.8"
-}]
+},
+{
+    "cor": "rosa",
+    "descricao": "bebida feita para queimar sua garganta em dias frios, com aquele sabor maravilhoso de pimenta e outras coisas...",
+    "estoque": "20",
+    "id_produto": "3",
+    "model_address": null,
+    "nome": "Blasmorpheus",
+    "valor": "56.8"
+},
+{
+    "cor": "azul",
+    "descricao": "é sério, isso vai congelar sua boca. Depois não diga que não avisei",
+    "estoque": "50",
+    "id_produto": "4",
+    "model_address": null,
+    "nome": "Blasmorpheio",
+    "valor": "56.8"
+},
+{
+    "cor": "colorido",
+    "descricao": "Isso vai trazer cor e sabor pro seu dia de programador.",
+    "estoque": "25",
+    "id_produto": "5",
+    "model_address": null,
+    "nome": "SuperDrink",
+    "valor": "129.90"
+},
+{
+    "cor": "rosa",
+    "descricao": "Nada mais eletrizante que essa poção do amor.",
+    "estoque": "75",
+    "id_produto": "6",
+    "model_address": null,
+    "nome": "LOVE",
+    "valor": "100.00"
+}
+]
