@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../styles/minima.css">
     <link rel="stylesheet" href="../styles/iframe.css">
     <link rel="stylesheet" href="../styles/store.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <link rel="stylesheet" href="../styles/catalog__items.css">
-    <script defer type="module" src="https://threejs.org/build/three.js"></script>
-    <script defer type="module" src="../scripts/store/main.js"></script>
+    <!-- <script defer type="module" src="https://threejs.org/build/three.js"></script> -->
+    <!-- <script defer type="module" src="../scripts/store/main.js"></script> -->
 
 </head>
 <body>
@@ -22,7 +23,7 @@
             <div class="store__menu">
 
                 <div class="menu__backwards__sizer">
-                    <a class="menu__backwards__link" href="./home.htm">
+                    <a class="menu__backwards__link" onclick="history.back()">
                         <svg class="menu__backwards__icon" src="../assets/svg/arrow_animated.svg">
                             <svg id="menu__backwards__icon__animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 23.17" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                             
@@ -38,7 +39,7 @@
                 <div class="menu__bag__sizer">
                     <div class="menu__bag__container">
                         <p class="bag__text">Loot <b class="bag__brackets">[ <span class="bag__quantity jump">0</span> ]</b></p>
-                        <a href=""><img class="bag__icon" src="../assets/svg/bag__icon.svg"></a>
+                        <a href="./bag__page.htm"><img class="bag__icon" src="../assets/svg/bag__icon.svg"></a>
                     </div>
                 </div>
 

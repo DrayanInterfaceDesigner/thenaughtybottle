@@ -1,0 +1,145 @@
+:root {
+    --op: .8;
+}
+.bag__page__payment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(0deg, rgba(17, 17, 17, var(--op)) 0%, rgba(14, 14, 14, var(--op)) 54.31%, rgba(6, 6, 6, var(--op)) 86.59%, rgba(0, 0, 0, var(--op)) 100%);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(80%);
+    z-index: 5;
+}
+
+.bag__page__payment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: var(--theme-bright-color);
+}
+
+.bag__page__payment__icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid var(--theme-bright-color);
+    background-color: #200C11;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.bag__page__payment__icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../assets/svg/bag__icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bag__page__payment:hover {
+    transform: translateY(73%);
+}
+
+.bag__payment__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 2.2rem;
+    /* background-color: aqua; */
+}
+
+.payment__quantity__sizer,
+.payment__button__sizer,
+.payment__total__sizer {
+    margin-top: .8rem;
+    width: 33%;
+    /* height: 1vh; */
+    /* background-color: rgb(76, 0, 255); */
+}
+
+.payment__quantity__sizer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.payment__quantity {
+    margin-right: 2rem;
+    background-color: #1E1118;
+    border: 1px solid var(--theme-bright-color);
+}
+
+.bag__text {
+    padding: .4rem;
+}
+
+.payment__total__sizer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.payment__total__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-left: 2rem;
+}
+.buy__button {
+    padding: .4rem 1.2rem .4rem 1rem;
+}
+.payment__button__wrapper {
+    padding: .1rem;
+    background: var(--card-btn-border-color);
+    clip-path: polygon(0% 0, 86% 0, 100% 50%, 86% 100%, 0% 100%, 0% 50%);
+    transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 2;
+}
+
+.payment__price {
+    position: relative;
+    left: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(26, 26, 26, 0) 0%,rgba(52, 8, 18, 1) 100%);
+    background : -webkit-linear-gradient(0deg, rgba(26, 26, 26, 0) 0%, rgba(52, 8, 18, 1) 100%);
+    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(26, 26, 26, 0) ),color-stop(1,rgba(52, 8, 18, 1) ));
+    background : -o-linear-gradient(0deg, rgba(26, 26, 26, 0) 0%, rgba(52, 8, 18, 1) 100%);
+    background : -ms-linear-gradient(0deg, rgba(26, 26, 26, 0) 0%, rgba(52, 8, 18, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A1A1A', endColorstr='#340812' ,GradientType=0)";
+    background : linear-gradient(90deg, rgba(26, 26, 26, 0) 0%, rgba(52, 8, 18, 1) 100%);
+    border-style : Solid;
+    border-color : #660808;
+    border-color : rgba(102, 8, 8, 1);
+    border-width : .1rem;
+    padding: .4rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A1A1A',endColorstr='#340812' , GradientType=1);
+    z-index: 1;
+}
+
+.mod__price {
+    width: 58%;
+}
