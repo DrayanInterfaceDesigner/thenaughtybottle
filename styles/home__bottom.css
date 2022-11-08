@@ -66,6 +66,19 @@
     /* background-color: aqua; */
 }
 
+.bottom__top__message__wrapper {
+    width: 60%;
+}
+
+.bottom__top__message {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+    color: var(--theme-bright-color);
+    opacity: .35;
+}
+
 .footer__rect__left {
     position: absolute;
     top: 0;
