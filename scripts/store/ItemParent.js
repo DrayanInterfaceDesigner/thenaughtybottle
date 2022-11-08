@@ -29,6 +29,7 @@ export class ItemParent {
         const item__header = this.#createEl('div', 'item__header', product__list__item)
         const item__footer = this.#createEl('div', 'item__footer', product__list__item)
 
+        product__list__item.setAttribute("id", `productID_${item.id}`)
         const item__header__info = this.#createEl('div', 'item__header__info', item__header)
         const info__name = this.#createEl('p', 'info__name', item__header__info)
         .innerText = item.name

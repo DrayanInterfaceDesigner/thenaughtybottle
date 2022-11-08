@@ -1,67 +1,56 @@
-import {ItemParent} from "./ItemParent.js"
 import {Item} from "./Item.js"
-
+import {ItemParent} from "./ItemParent.js"
+import { resultJSON } from "./listar_produtos.js"
 const item_parent = document.querySelector('.products__list__item__wrapper')
 
-// Essa array vai ser criada dinamicamente usando as informações
-// vindas do servidor, que são: 
-// model_adress(potion-bottle_corAqui), name, subtitle,
-// description, price
+let items = []
 
-const items = [
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_blue',
-	name: 'Technical Assistance',
-	subtitle: 'it works!',
-	description: "You can finally summon that indian guy to solve all your tech problems. Or at least try...",
-	price: "568.75"
-	}),
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_wine',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Love was never a option. So I've brought the cold.",
-	price: "568.75"
-	}),
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_green',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Love was never a option. So I've brought the cold.",
-	price: "568.75"
-	}),
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_orange',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Love was never a option. So I've brought the cold.",
-	price: "568.75"
-	}),
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_pink',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Love was never a option. So I've brought the cold.",
-	price: "568.75"
-	}),
-	new Item({
-	URL: './iframe.htm',
-	model_adress: 'potion-bottle_purple',
-	name: 'Blasmorpheus',
-	subtitle: 'cold freezing',
-	description: "Love was never a option. So I've brought the cold.",
-	price: "568.75"
-	})
-]
+function createItemInstance(objectArray){
+    objectArray.forEach(item => {
+        const x = new Item({
+            URL: './iframe.htm',
+            model_address: item.model_address,
+            name: item.nome,
+            id: item.id_produto,
+            stock: item.estoque,
+            subtitle: item.subtitulo,
+            description: item.descricao,
+            price: item.valor
+        })
+        addItemToList(x, items)
+    })
+}
+function addItemToList(instance, array){
+    array.push(instance)
+}
+const test = JSON.parse(JSON.stringify([{
+    "cor": "vermel",
+    "descricao": "O curso",
+    "estoque": "100",
+    "id_produto": "1",
+    "model_address": "potion-bottle_red",
+    "nome": "The intercurso",
+    "subtitulo": "Cheiro de...curso",
+    "valor": "66.81"
+},
+{
+    "cor": "Azul",
+    "descricao": "Para ter um bom momento eita preula",
+    "estoque": "100",
+    "id_produto": "2",
+    "model_address": "potion-bottle_red",
+    "nome": "Eita preula momment",
+    "subtitulo": "eita preula!",
+    "valor": "56.8"
+}]))
+createItemInstance(test)
+//ta tentando puxar o código do php, talvez pq n to com server aberto?
+// createItemInstance(resultJSON)
+console.log(resultJSON)
+// console.log("Items: ", items)
 
-// cria os items na página
+// Puts the items into the page
 items.forEach(item => {
-	console.log('ITEM: ', item)
-	const p = new ItemParent(item_parent).create(item)
-	item.createIframe('item__3D__iframe', p)
+	const product = new ItemParent(item_parent).create(item)
+	item.createIframe('item__3D__iframe', product)
 })
