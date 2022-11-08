@@ -12,7 +12,7 @@ while($registro = mysqli_fetch_assoc($select)){
     $resultado[$i]["descricao"] = $registro["descricao"];
     $resultado[$i]["model_address"] = $registro["model_address"];
     $resultado[$i]["cor"] = $registro["cor"];
-
+    $i++;
 }
 
 $objJSON = json_encode($resultado);

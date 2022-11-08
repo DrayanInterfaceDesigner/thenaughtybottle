@@ -2,12 +2,14 @@
 require("conexao.php");
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+$id_cliente = mysqli_query($conn, "SELECT id_clientes FROM clientes WHERE email = '$email'");
 $select = mysqli_query($conn, "SELECT * FROM clientes WHERE email = '$email' and senha = '$senha'");
-echo $email;
+$i = 0;
 
 if(mysqli_num_rows($select) == 1){
     echo "<script>alert('Bem-vindo!')</script>";
     $usuario = $select->fetch_assoc();
+
     if(!isset($_SESSION)){
         session_start();
     }
@@ -18,7 +20,6 @@ if(mysqli_num_rows($select) == 1){
 
 }
 else{
-    echo "<script>alert('Digite uma senha válida!')</script>";
-   // header("location: loginteste.html");
-}
+    echo "<script> alert('Conta não encontrada. Faça já seu cadastro!.');
+          window.location.replace('../pages/join.htm'); </script>"; }
 ?>
