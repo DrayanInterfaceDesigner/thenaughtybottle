@@ -89,11 +89,11 @@
     margin: 0 1rem;
     z-index: 99;
     transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
-    /* opacity: .8; */
+    opacity: .8;
 }
 .testimonials__card__wrapper:hover {
     transform: translateY(-5%);
-    
+    opacity: 1;
 }
 
 .testimonials__card__bg {
