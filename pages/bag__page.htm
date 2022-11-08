@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Naughty Bottle - Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/svg/logo.svg">
+    <link rel="stylesheet" href="../styles/minima.css">
+    <link rel="stylesheet" href="../styles/home__main.css">
+    <link rel="stylesheet" href="../styles/iframe.css">
+    <link rel="stylesheet" href="../styles/store.css">
+    <link rel="stylesheet" href="../styles/catalog__items.css">
+    <link rel="stylesheet" href="../styles/payment.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script defer type="module" src="../scripts/bag/main.js"></script>
+    <!-- <script defer type="module" src="https://threejs.org/build/three.js"></script> -->
+    <!-- <script defer type="module" src="../scripts/store/main.js"></script> -->
+
+</head>
+<body>
+
+    <div class="app">
+        <section class="store fp">
+            <div class="store__bg"></div>
+            <div class="store__menu">
+
+                <div class="menu__backwards__sizer">
+                    <a class="menu__backwards__link" onclick="history.back()">
+                        <svg class="menu__backwards__icon" src="../assets/svg/arrow_animated.svg">
+                            <svg id="menu__backwards__icon__animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 23.17" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            
+                                <path d="M15.26,61.59c-.24428.00075-.482452-.076306-.68-.22L0,50L14.58,38.63c.406785-.290529.953215-.290529,1.36,0c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53L2.72,50L15.94,60.31c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53c-.197548.143694-.43572.22075-.68.22Z" transform="translate(0-38.41)" fill="#e51f44"/><g id="eivct5YpGgM3_to" transform="translate(13.081562,11.585)"><g id="eivct5YpGgM3_ts" transform="rotate(135) scale(1,1)"><rect width="6.03" height="6.03" rx="0" ry="0" transform="translate(-3.010978,-3.019024)" fill="#e51f44"/></g></g><g id="eivct5YpGgM4_to" transform="translate(37.101066,11.585)"><g id="eivct5YpGgM4_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.559083,-4.559083)" fill="none" stroke="#e51f44" stroke-width="0.5" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM5_to" transform="translate(40.628397,11.591051)"><g id="eivct5YpGgM5_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.555,-4.555)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM6_ts" transform="translate(16.221252,11.591051) scale(1,1)"><line x1="16.29" y1="11.59" x2="31.17" y2="11.59" transform="translate(-16.221252,-11.591051)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g><g id="eivct5YpGgM7_ts" transform="translate(99.521464,11.578949) scale(0.854269,1)"><line x1="48.28" y1="11.59" x2="102.455681" y2="11.59" transform="translate(-109.679104,-11.583949)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></svg>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="menu__title__sizer">
+                    <p class="menu__title">The Bag</p>
+                </div>
+
+                <div class="menu__bag__sizer"></div>
+
+            </div>
+            <div class="store__products">
+                <div class="store__products__list">
+                    <div class="products__list__item__wrapper">
+                        <div class="products__list__item">
+                            <div class="item__3D__container">
+                                <iframe class="item__3D__iframe" src="./iframe.htm#potion-bottle_red"></iframe>
+                            </div>
+                            <div class="item__header">
+                                <div class="item__header__info">
+                                    <p class="info__name">Axiomorphius</p>
+                                    <p class="info__subtitle">a "lotion" in a jar</p>
+                                    <div class="info__bg__wrapper">
+                                        <img class="info__bg" src="../assets/svg/petals.svg" ></img>
+                                        <img class="info__bg" src="../assets/svg/petals.svg" ></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <div class="payment__total__wrapper">
+                                    <div class="payment__button__wrapper">
+                                        <div class="buy__button">
+                                            <p class="buy__button__label">Price</p>
+                                        </div>
+                                    </div>
+                                    <div class="payment__price mod__price">
+                                        <p class="price__tag mod__price__value">500</p>
+                                        <p class="price__currency">BRL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                </div>
+            </div>
+        </section>
+        <section class="bag__page__payment">
+            <div class="bag__page__payment__icon"></div>
+            <div class="bag__payment__wrapper">
+                <div class="payment__quantity__sizer">
+                    <div class="payment__quantity">
+                        <div class="menu__bag__container">
+                            <p class="bag__text">Loot <b class="bag__brackets">[ <span class="bag__quantity jump">0</span> ]</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment__button__sizer">
+
+                    <div class="menu__openstore__button__border">
+                        <div class="openstore__button__inner">
+                            <div class="openstore__button__inner__inner">
+                                <a href="../pages/store.htm" class="openstore__button">
+                                    <svg class="menu__backwards__icon" src="../assets/svg/arrow_animated.svg">
+                                        <svg id="menu__backwards__icon__animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 23.17" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                                        
+                                            <path d="M15.26,61.59c-.24428.00075-.482452-.076306-.68-.22L0,50L14.58,38.63c.406785-.290529.953215-.290529,1.36,0c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53L2.72,50L15.94,60.31c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53c-.197548.143694-.43572.22075-.68.22Z" fill="#e51f44"/><g id="eivct5YpGgM3_to" transform="translate(13.081562,11.585)"><g id="eivct5YpGgM3_ts" transform="rotate(135) scale(1,1)"><rect width="6.03" height="6.03" rx="0" ry="0" transform="translate(-3.010978,-3.019024)" fill="#e51f44"/></g></g><g id="eivct5YpGgM4_to" transform="translate(37.101066,11.585)"><g id="eivct5YpGgM4_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.559083,-4.559083)" fill="none" stroke="#e51f44" stroke-width="0.5" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM5_to" transform="translate(40.628397,11.591051)"><g id="eivct5YpGgM5_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.555,-4.555)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM6_ts" transform="translate(16.221252,11.591051) scale(1,1)"><line x1="16.29" y1="11.59" x2="31.17" y2="11.59" transform="translate(-16.221252,-11.591051)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g><g id="eivct5YpGgM7_ts" transform="translate(99.521464,11.578949) scale(0.854269,1)"><line x1="48.28" y1="11.59" x2="102.455681" y2="11.59" transform="translate(-109.679104,-11.583949)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></svg>
+                                    </svg>
+                                    <p class="openstore__button__text">Go to payment</p>
+                                    <svg class="menu__backwards__icon right" src="../assets/svg/arrow_animated.svg">
+                                        <svg id="menu__backwards__icon__animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 23.17" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                                        
+                                            <path d="M15.26,61.59c-.24428.00075-.482452-.076306-.68-.22L0,50L14.58,38.63c.406785-.290529.953215-.290529,1.36,0c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53L2.72,50L15.94,60.31c.175886.119054.281252.317609.281252.53s-.105366.410946-.281252.53c-.197548.143694-.43572.22075-.68.22Z" fill="#e51f44"/><g id="eivct5YpGgM3_to" transform="translate(13.081562,11.585)"><g id="eivct5YpGgM3_ts" transform="rotate(135) scale(1,1)"><rect width="6.03" height="6.03" rx="0" ry="0" transform="translate(-3.010978,-3.019024)" fill="#e51f44"/></g></g><g id="eivct5YpGgM4_to" transform="translate(37.101066,11.585)"><g id="eivct5YpGgM4_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.559083,-4.559083)" fill="none" stroke="#e51f44" stroke-width="0.5" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM5_to" transform="translate(40.628397,11.591051)"><g id="eivct5YpGgM5_ts" transform="rotate(45) scale(1,1)"><rect width="9.11" height="9.11" rx="0" ry="0" transform="translate(-4.555,-4.555)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></g><g id="eivct5YpGgM6_ts" transform="translate(16.221252,11.591051) scale(1,1)"><line x1="16.29" y1="11.59" x2="31.17" y2="11.59" transform="translate(-16.221252,-11.591051)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g><g id="eivct5YpGgM7_ts" transform="translate(99.521464,11.578949) scale(0.854269,1)"><line x1="48.28" y1="11.59" x2="102.455681" y2="11.59" transform="translate(-109.679104,-11.583949)" fill="none" stroke="#e51f44" stroke-miterlimit="10"/></g></svg>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="payment__total__sizer">
+
+                        <div class="payment__total__wrapper">
+                            <div class="payment__button__wrapper">
+                                <div class="buy__button">
+                                    <p class="buy__button__label">Total</p>
+                                </div>
+                            </div>
+                            <div class="payment__price">
+                                <p id="total__price" class="price__tag"> 0.00</p>
+                                <p class="price__currency">BRL</p>
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
