@@ -16,7 +16,7 @@ if(mysqli_num_rows($select) == 1){
     $_SESSION['id'] = $usuario['id_clientes'];
     $_SESSION['nome'] = $usuario['nome'];
 
-    header("location: ../pages/home_welcome.htm");
+    header("location: ../pages/home.htm");
 
 }
 else{
