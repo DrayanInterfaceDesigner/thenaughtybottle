@@ -55,6 +55,11 @@ export class ItemParent {
         .innerText = 'BRL'
 
         item__buy__wrapper.addEventListener("click", ()=> {
+            const loot_number = document.querySelector(".bag__quantity")
+            loot_number.innerText = eval(loot_number.innerText) + 1
+            loot_number.classList.remove("jump")
+            setTimeout(() =>{loot_number.classList.add("jump")}, 100)
+
             item__buy__wrapper.classList.remove("item__buy__wrapper")
             buy__button__wrapper.classList.remove("buy__button__wrapper")
             buy__button.classList.remove("buy__button")
@@ -89,32 +94,18 @@ export class ItemParent {
         const info__bg_2 = this.#createEl('img', 'info__bg', info__bg__wrapper)
         .setAttribute('src', '../assets/svg/petals.svg')
 
-        const item__description = this.#createEl('p', 'item__description', item__footer)
-        .innerText = item.description
-        const item__buy__wrapper = this.#createEl('div', 'item__buy__wrapper', item__footer)
-        const buy__button__wrapper = this.#createEl('div', 'buy__button__wrapper', item__buy__wrapper)
-        const buy__button = this.#createEl('div', 'buy__button', buy__button__wrapper)
+        const payment__total__wrapper = this.#createEl('div', 'payment__total__wrapper', item__footer)
+        const payment__button__wrapper = this.#createEl('div', 'payment__button__wrapper', payment__total__wrapper)
+        const buy__button = this.#createEl('div', 'buy__button', payment__button__wrapper)
         const buy__button__label = this.#createEl('p', 'buy__button__label', buy__button)
-        buy__button__label.innerText = 'Buy'
-        const buy__price = this.#createEl('div', 'buy__price', item__buy__wrapper)
-        const price__tag = this.#createEl('p', 'price__tag', buy__price)
-        .innerText = item.price
-        const price__currency = this.#createEl('p', 'price__currency', buy__price)
+        buy__button__label.innerText = 'Price'
+        const payment__price = this.#createEl('div', 'payment__price', payment__total__wrapper)
+        payment__price.classList.add('mod__price')
+        const price__tag = this.#createEl('p', 'price__tag', payment__price)
+        price__tag.classList.add('mod__price__value')
+        price__tag.innerText = item.price
+        const price__currency = this.#createEl('p', 'price__currency', payment__price)
         .innerText = 'BRL'
-
-        item__buy__wrapper.addEventListener("click", ()=> {
-            item__buy__wrapper.classList.remove("item__buy__wrapper")
-            buy__button__wrapper.classList.remove("buy__button__wrapper")
-            buy__button.classList.remove("buy__button")
-            item__buy__wrapper.classList.add("item__buy__wrapper__disabled")
-            buy__button__wrapper.classList.add("buy__button__wrapper__disabled")
-            buy__button.classList.add("buy__button__disabled")
-
-            product__list__item.classList.remove("products__list__item")
-            product__list__item.classList.add("products__list__item__disabled")
-            product__list__item.classList.add("disabled")
-            buy__button__label.innerText = "Bought"
-        })
 
         return item__3D__container
     }

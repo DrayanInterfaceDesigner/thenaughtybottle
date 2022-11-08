@@ -1,11 +1,12 @@
-fetch("../php/carrinho.php", {
-    method: "GET",
-}).then(async(resposta) => {
-    let dados = await resposta.json();
-    listarCarrinho(dados);
-    calcularValor(dados);
-    console.log(dados);
-})
+export let resultBagJSON
+
+// fetch("../php/carrinho.php", {
+//     method: "GET",
+// }).then(async(resposta) => {
+//     let dados = await resposta.json();
+//     resultBagJSON = dados
+//     console.log(dados);
+// })
 
 // criar/implementar funções de listar e calcular. Seguem exemplos(das nossas veteranas): 
 
