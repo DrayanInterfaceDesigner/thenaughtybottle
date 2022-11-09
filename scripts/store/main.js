@@ -1,6 +1,6 @@
 import {Item} from "./Item.js"
 import {ItemParent} from "./ItemParent.js"
-import { resultJSON } from "./listar_produtos.js"
+import { resultJSON } from "./listar_produtos2.js"
 const item_parent = document.querySelector('.products__list__item__wrapper')
 
 let items = []
@@ -43,9 +43,9 @@ const test = JSON.parse(JSON.stringify([{
     "subtitulo": "eita preula!",
     "valor": "56.8"
 }]))
-createItemInstance(test)
+//createItemInstance(test)
 //ta tentando puxar o código do php, talvez pq n to com server aberto?
-// createItemInstance(resultJSON)
+createItemInstance(resultJSON)
 console.log(resultJSON)
 // console.log("Items: ", items)
 

@@ -1,6 +1,5 @@
-export let resultJSON
+export let resultJSON= []
 console.log("1")
-alert("xampp imbecil")
 fetch("../php/listar_produtos.php",{
     method: "GET"
 }).then(async function (resposta){
