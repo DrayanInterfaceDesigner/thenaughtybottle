@@ -51,27 +51,47 @@ const test = JSON.parse(JSON.stringify([{
     "subtitulo": "eita preula!",
     "valor": "56.8"
 }]))
-createItemInstance(test)
+// createItemInstance(test)
 //ta tentando puxar o código do php, talvez pq n to com server aberto?
 // createItemInstance(resultBagJSON)
-console.log(resultBagJSON)
+// console.log(resultBagJSON)
 // console.log("Items: ", items)
 
 // Puts the items into the page
-
 const RenderItems = async () => {
     items.forEach(item => {
 	const product = new ItemParent(item_parent).createForBag(item)
 	item.createIframe('item__3D__iframe', product)
 })}
 
-RenderItems().then(()=>{
-    const price_values = document.querySelectorAll(".mod__price__value")
-    price_values.forEach(p => {
-        total += eval(p.innerText)
+fetch("../php/carrinho.php", {
+    method: "GET",
+}).then(async(resposta) => {
+
+    let dados = await resposta.json();
+    createItemInstance(dados)
+
+    RenderItems().then(()=>{
+        const price_values = document.querySelectorAll(".mod__price__value")
+        price_values.forEach(p => {
+            total += eval(p.innerText)
+        })
+        total = total.toFixed(2)
+        total_price.innerText = total
+        total_amount.innerText = price_values.length
     })
-    total = total.toFixed(2)
-    total_price.innerText = total
-    total_amount.innerText = price_values.length
-}
-)
+
+    console.log(dados);
+})
+
+
+
+// RenderItems().then(()=>{
+//     const price_values = document.querySelectorAll(".mod__price__value")
+//     price_values.forEach(p => {
+//         total += eval(p.innerText)
+//     })
+//     total = total.toFixed(2)
+//     total_price.innerText = total
+//     total_amount.innerText = price_values.length
+// })
