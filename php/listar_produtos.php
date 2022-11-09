@@ -6,6 +6,7 @@ $i = 0;
 
 while($registro = mysqli_fetch_assoc($select)){
     $resultado[$i]["id_produto"] = $registro["id_produto"];
+    $resultado[$i]["subtitulo"] = $registro["subtitulo"];
     $resultado[$i]["nome"] = $registro["nome"];
     $resultado[$i]["valor"] = $registro["valor"];
     $resultado[$i]["estoque"] = $registro["estoque"];

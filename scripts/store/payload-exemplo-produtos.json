@@ -1,54 +1,60 @@
 [{
-    "cor": "vermelho",
+    "cor": "red",
     "descricao": "Uma dose de bom-humor para programar em dias difíceis. Contém tantas substâncias diferenciadas que é impossível listar tudo!",
+    "subtitulo": "você vai ficar felizão :)",
     "estoque": "100",
     "id_produto": "1",
-    "model_address": null,
+    "model_address": "potion-bottle_red",
     "nome": "Axiomorphius",
     "valor": "66.81"
 },
 {
-    "cor": "azul",
+    "cor": "wine",
     "descricao": "Aquele up de energia pra qualquer programador cansado. ",
+    "subtitulo": "energiaaaaaaaa",
     "estoque": "100",
     "id_produto": "2",
-    "model_address": null,
+    "model_address": "potion-bottle_wine",
     "nome": "Tech Assistence",
     "valor": "56.8"
 },
 {
-    "cor": "rosa",
+    "cor": "pink",
     "descricao": "bebida feita para queimar sua garganta em dias frios, com aquele sabor maravilhoso de pimenta e outras coisas...",
+    "subtitulo": "é quente. chamaaa!",
     "estoque": "20",
     "id_produto": "3",
-    "model_address": null,
+    "model_address": "potion-bottle_pink" ,
     "nome": "Blasmorpheus",
     "valor": "56.8"
 },
 {
-    "cor": "azul",
+    "cor": "purple",
     "descricao": "é sério, isso vai congelar sua boca. Depois não diga que não avisei",
+    "subtitulo": "frozen tá diferente",
     "estoque": "50",
     "id_produto": "4",
-    "model_address": null,
+    "model_address": "potion-bottle_purple",
     "nome": "Blasmorpheio",
     "valor": "56.8"
 },
 {
-    "cor": "colorido",
+    "cor": "green",
     "descricao": "Isso vai trazer cor e sabor pro seu dia de programador.",
+    "subtitulo": "fazendo programa do melhor jeito.",
     "estoque": "25",
     "id_produto": "5",
-    "model_address": null,
+    "model_address": "potion-bottle_green",
     "nome": "SuperDrink",
     "valor": "129.90"
 },
 {
-    "cor": "rosa",
+    "cor": "orange",
     "descricao": "Nada mais eletrizante que essa poção do amor.",
+    "subtitulo": "ame sem limites com essa belezinha <3",
     "estoque": "75",
     "id_produto": "6",
-    "model_address": null,
+    "model_address": "potion-bottle_orange",
     "nome": "LOVE",
     "valor": "100.00"
 }
