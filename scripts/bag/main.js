@@ -84,15 +84,20 @@ fetch("../php/carrinho.php", {
     console.log(dados);
 })
 
-RenderItems().then(()=>{
-    const price_values = document.querySelectorAll(".mod__price__value")
-    price_values.forEach(p => {
-        total += eval(p.innerText)
+
+setInterval(()=> {
+    RenderItems().then(()=>{
+        const price_values = document.querySelectorAll(".mod__price__value")
+        price_values.forEach(p => {
+            total += eval(p.innerText)
+        })
+        total = total.toFixed(2)
+        total_price.innerText = total
+        total_amount.innerText = price_values.length
     })
-    total = total.toFixed(2)
-    total_price.innerText = total
-    total_amount.innerText = price_values.length
-})
+}, 1000)
+
+
 
 
 
