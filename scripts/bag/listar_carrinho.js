@@ -3,8 +3,6 @@ export let resultBagJSON
 fetch("../php/carrinho.php", {
     method: "GET",
 }).then(async(resposta) => {
-    let d=await resposta.json()
-    console.log(d)
     let dados = await resposta.json();
     resultBagJSON = dados
     console.log(dados);
