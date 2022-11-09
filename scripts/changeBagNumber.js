@@ -11,10 +11,11 @@ window.onload = function() {
         console.log("old: ", resultBagJSON.length)
         console.log(dados);
     }).then(()=> {
-        loot_number.innerText = dados.length
+        loot_number.innerText = resultBagJSON.length
     })
 }
 
 setInterval(()=> {
-    loot_number.innerText = dados.length
+    loot_number.innerText = resultBagJSON.length
+    console.log(resultBagJSON.length)
 }, 1000)
