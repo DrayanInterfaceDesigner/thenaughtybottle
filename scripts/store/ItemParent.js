@@ -63,7 +63,8 @@ export class ItemParent {
             fetch("../php/adiciona-carrinho.php", {
               method: "POST",
               body: JSON.stringify(_data),
-              headers: {"Content-type": "application/json; charset=UTF-8"}
+              headers: {"Content-type": "application/json; charset=UTF-8"
+            }
             })
             .then(response => response.json()) 
             .then(json => console.log(json))
