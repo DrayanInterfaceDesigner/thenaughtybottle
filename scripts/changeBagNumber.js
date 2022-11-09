@@ -8,7 +8,7 @@ window.onload = function() {
     }).then(async(resposta) => {
         let dados = await resposta.json();
         loot_number.innerText = dados.length
-        console.log("old: ", resultBagJSON)
+        console.log("old: ", resultBagJSON.length)
         console.log(dados);
     }).then(()=> {
         loot_number.innerText = dados.length
