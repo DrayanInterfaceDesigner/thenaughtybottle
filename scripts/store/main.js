@@ -45,12 +45,25 @@ const test = JSON.parse(JSON.stringify([{
 }]))
 //createItemInstance(test)
 //ta tentando puxar o código do php, talvez pq n to com server aberto?
-createItemInstance(resultJSON)
-console.log(resultJSON)
-// console.log("Items: ", items)
+// createItemInstance(resultJSON)
+// console.log(resultJSON)
+// // console.log("Items: ", items)
 
-// Puts the items into the page
-items.forEach(item => {
-	const product = new ItemParent(item_parent).create(item)
-	item.createIframe('item__3D__iframe', product)
-})
+// // Puts the items into the page
+// items.forEach(item => {
+// 	const product = new ItemParent(item_parent).create(item)
+// 	item.createIframe('item__3D__iframe', product)
+// })
+
+fetch("../php/listar_produtos.php",{
+    method: "GET"
+}).then(async function (resposta){
+    var resultado = await resposta.json();
+    // let resultJSON = resultado
+    console.log(resultado)
+    createItemInstance(resultado)
+    items.forEach(item => {
+    	const product = new ItemParent(item_parent).create(item)
+    	item.createIframe('item__3D__iframe', product)
+    })
+});
