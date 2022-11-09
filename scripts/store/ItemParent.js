@@ -55,6 +55,19 @@ export class ItemParent {
         .innerText = 'BRL'
 
         item__buy__wrapper.addEventListener("click", ()=> {
+
+            const _data = {
+                id_produto: item.id
+            }
+
+            fetch("../php/adiciona-carrinho.php", {
+              method: "POST",
+              body: JSON.stringify(_data),
+              headers: {"Content-type": "application/json; charset=UTF-8"}
+            })
+            .then(response => response.json()) 
+            .then(json => console.log(json))
+
             const loot_number = document.querySelector(".bag__quantity")
             loot_number.innerText = eval(loot_number.innerText) + 1
             loot_number.classList.remove("jump")
@@ -110,3 +123,5 @@ export class ItemParent {
         return item__3D__container
     }
 }
+
+  
