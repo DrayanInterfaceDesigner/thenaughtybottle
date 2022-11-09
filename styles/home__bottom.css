@@ -1,6 +1,7 @@
 :root {
     --size: 3.5rem;
     --diamond-size: 3.5rem;
+    --diamond-mod-size: 6rem;
 }
 .bottom {
     display: flex;
@@ -67,6 +68,7 @@
 }
 
 .bottom__top__message__wrapper {
+    margin: 3rem 0;
     width: 60%;
 }
 
@@ -149,5 +151,31 @@
 
 .diamond__social__icon {
     width: 50%;
+    transform: rotateZ(-45deg);
+}
+
+.bottom__button__diamond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: var(--diamond-mod-size);
+    height: var(--diamond-mod-size);
+    margin: 4rem 2rem;
+    background-color: #3B141B;
+    border: 5px solid var(--dark-bg-color);
+    outline: 1px solid var(--theme-bright-color);
+    transition: .4s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bottom__button__diamond:hover {
+    background-color: #641826;
+}
+
+.diamond__button__icon {
+    width: 30%;
     transform: rotateZ(-45deg);
 }
